@@ -1,0 +1,161 @@
+ body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #14819c;
+    }
+
+    h2, h3 {
+      margin: 0;
+    }
+
+    header {
+      background-color: #fabcfa;
+      color: #000000;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4em;
+    }
+
+    nav a {
+      margin-right: 25px;
+      color: #030303;
+      font-weight: 600;
+    }
+
+    .btn-logout {
+      background-color: #00bcd4;
+      color: rgb(7, 7, 7);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(230, 55, 177, 0.05);
+    }
+
+    .profile-header {
+      background-color: #00bcd4;
+      height: 100px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+    }
+
+    .profile-info {
+      margin-top: -50px;
+      text-align: center;
+      
+    }
+
+    .profile-info img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        position: absolute ;
+        top: 150px;
+        left: 30%;
+        transform: translateX(-170%);
+        box-shadow: 0 2px 8px rgba(0, 0,0,0.2);
+    }
+
+    .profile-info h2 {
+      margin-top: 10px;
+      font-size: 1.8em;
+    }
+
+    .edit-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+
+    .education {
+      margin-top: 10px;
+    }
+
+    .education h3 {
+      margin-bottom: 0.9em;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 15px;
+    }
+
+    .connection-request, .connection {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      justify-content: space-between;
+    }
+
+    .connection img, .connection-request img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .connection-info {
+      flex-grow: 1;
+      font-size: 0.9em;
+    }
+
+    .actions button {
+      background: none;
+      border: 2px solid #000000;
+      color: #48c796;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 120px;
+      }
+    }
